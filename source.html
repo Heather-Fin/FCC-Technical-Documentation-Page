@@ -1,0 +1,207 @@
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<main id="main-doc">
+    
+    <div id="hero">
+    
+    <nav id="navbar">
+        <header id="title"><b>basic concepts of programming</b></header>
+        <ul style="list-style: none;">
+            
+            <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+            
+            <a class="nav-link" href="#Program_Structure" rel="internal"><li>Program Structure</li></a>
+            
+            <a class="nav-link" href="#Variable_Declaration" rel="internal"><li>Variable Declaration</li></a>
+            
+            <a class="nav-link" href="#Looping_Structures" rel="internal"><li>Looping Structures</li></a>
+            
+            <a class="nav-link" href="#Control_Structures" rel="internal"><li>Control Structures</li></a>
+            
+            <a class="nav-link" href="#Syntax" rel="internal"><li>Syntax</li></a>
+            
+            <a class="nav-link" href="#References" rel="internal"><li>References</li></a>
+        </ul>
+    </nav>    
+        
+    <img id="hero-img" src="https://blog.programminghub.io/wp-content/uploads/2016/06/Basic-Concepts-of-Programming.png">
+
+    </div>
+    
+<div id="content">
+<section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    
+    <p>A computer program is a collection of instructions that performs a specific task when executed by a computer. A computer requires programs to function, and typically executes the program’s instructions in a central processing unit.</p>
+
+    <p>A computer program is usually written by a computer programmer in a programming language. From the program in its human-readable form of source code, a compiler can derive machine code—a form consisting of instructions that the computer can directly execute. Alternatively, a computer program may be executed with the aid of an interpreter.</p>
+
+    <p>The first programmable computers required the programmers to write explicit instructions to directly manipulate the hardware of the computer. This “machine language” was very tedious to write by hand since even simple tasks such as printing some output on the screen require 10 or 20 machine language commands. Machine language is often referred to as a “low level language” since the code directly manipulates the hardware of the computer. </p>
+
+    <p>By contrast, higher level languages such as “C”, C++, Pascal, Cobol, Fortran, ADA and Java are called “compiled languages”. In a compiled language, the programmer writes more general instructions and a compiler (a special piece of software) automatically translates these high level instructions into machine language. The machine language is then executed by the computer. A large portion of software in use today is programmed in this fashion.</p>
+
+    <p>There are two different models of programming-</p>
+    
+    <ol>
+        <li><b>Structured programming – </b> In this type, code is executed one after another. Control statements change which blocks of code are executed next. It is aimed at improving the clarity, quality, and development time of a computer program by making extensive use of subroutines, block structures, for and while loops</li>
+        <li><b>Object oriented programming – </b>It is based on the concept of “objects”, which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object’s procedures can access and often modify the data fields of the object with which they are associated. There is no single “flow” of the program as objects can freely interact with one another by passing messages.</li>
+    </ol>
+    
+</section>
+    
+<section class="main-section" id="Program_Structure">
+    <header>Program Structure</header>
+    
+    <img src="https://i2.wp.com/blog.programminghub.io/wp-content/uploads/2016/06/program-structure.png?zoom=1.5&resize=573%2C383" alt="Empty flow chart.">
+    
+    <p>The overall form of a program, with particular emphasis on the individual components of the program and the interrelationships between these components. Programs are frequently referred to as either well-structured or poorly structured. With a well-structured program the division into components follows some recognized principle such as information hiding, and the interfaces between components are explicit and simple. By contrast, with a poorly structured program the division into components is largely arbitrary (or even non-existent), and interfaces are implicit and complex. At a finer level, a well-structured program employs appropriate data structures and program units with a single entry point and a single exit point, while a poorly structured program has arbitrary data structures and flow of control.</p>
+
+    <p>Virtually all structured programs share a similar overall pattern:</p>
+    
+    <ul>
+        <li>Statements to establish the start of the program</li>
+        <li>Variable declaration</li>
+        <li>Program statements (blocks of code)</li>
+    </ul>
+    
+    <p>This is the basic “hello world” example used in all programming languages.</p>
+    
+    <div id=code-table>
+        <table>
+            <tr>
+                
+                <td id="table-title"><b>Language</b></td>
+                <td id="table-title"><b>Example Program</b></td>
+            </tr>
+            
+            <tr>
+                <td id="language">"C"</td>
+                <td id="example"><code>	           #include &lt;stdio.h&gt;<br>
+                void main() {<br>
+                printf(“Hello World”);<br>
+                }</code></td>
+            </tr>
+            
+            <tr>
+                <td id="language">"C++"</td>
+                <td id="example"><code>	           	#include &lt;iostream&gt;<br>
+                int main() {<br>
+                cout &lt;&lt; “Hello World”;<br>
+                return 0;<br>
+                }</code></td>
+            </tr>
+            
+            <tr>
+                <td id="language">"Pascal"</td>
+                <td id="example"><code>	           	program helloworld (output);<br>
+                begin<br>
+                writeln(‘Hello World’);<br>
+                end</code></td>
+            </tr>
+            
+            <tr>
+                <td id="language">"Oracle PL/SQL"</td>
+                <td id="example"><code>	           	CREATE OR REPLACE PROCEDURE helloworld AS<br>
+                BEGIN<br>
+                DBMS_OUTPUT.PUT_LINE(‘Hello World’);<br>
+                END;</code></td>
+            </tr>
+        
+        </table>
+    </div>
+    
+</section>
+    
+<section class="main-section" id="Variable_Declaration">
+    <header>Variable Declaration</header>
+    
+    <img src="https://i1.wp.com/blog.programminghub.io/wp-content/uploads/2016/06/variable-1.png?resize=768%2C270&ssl=1" alt="Diagram illustrating int as a type of variable and count as the name.">
+    
+    <p>A variable or scalar is a storage location paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value. The variable name is the usual way to reference the stored value. Variables are the backbone of any program, and thus the backbone of any programming language.in simple terms, a variable is simply a way to store some sort of information for later use, and we can retrieve this information by referring to a “word” that will describe this information.</p>
+
+    <p>Different types of variables include:</p>
+    <ul>
+        <li>Integer – to store integer or “whole” numbers</li>
+        <li>Real – to store real or fractional numbers (also called float to indicate a floating point number)</li>
+        <li>Character – A single character such as a letter of the alphabet or punctuation.</li>
+        <li>String – A collection of characters</li>
+    </ul>
+    
+    <p>In order to use a variable within a program, the compiler needs to know in advance the type of data that will be stored in it. For this reason, we declare the variables at the start of the program. Variable declaration consists of giving a new name and a data type for the variable. This is normally done at the very start of the program.</p>
+    
+    <p><b>For example:</b></p>
+    
+    <div id="code-example">
+    <code id="code">
+        #include &lt;stdio.h&gt;<br>
+        void main() {<br>
+        int age;<br>
+        float salary;<br>
+        char middle_initial;<br>
+        age = 25;<br>
+        salary = 196578.89;<br>
+        middle_initial = "K";<br>
+        printf("I am %d years old ", age);<br>
+        printf("I make %f per year " salary);<br>
+        printf("My middle initial is %c ",<br> middle_initial);<br>
+        } 
+    </code>
+    </div>
+    
+</section>
+    
+<section class="main-section" id="Looping_Structures">
+    <header>Looping Structures</header>
+    
+    <p>Loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is True, until a condition is False, a specified number of times, or once for each element in a collection.</p>
+
+    <p>The following illustration shows a loop structure that runs a set of statements until a condition becomes true.</p>
+    
+    <img src="https://i2.wp.com/blog.programminghub.io/wp-content/uploads/2016/06/flowchart.png?zoom=1.5&resize=619%2C366" alt="Flow chart showing the steps of a program.">
+    
+    <p>Running a set of statements until a condition becomes true</p>
+
+    <p>An infinite loop is one that lacks a functioning exit routine . The result is that the loop repeats continually until the operating system senses it and terminates the program with an error or until some other event occurs (such as having the program automatically terminate after a certain duration of time).</p>
+    
+</section>
+    
+<section class="main-section" id="Control_Structures">
+    <header>Control Structures</header>
+    
+    <p>A control structure is a block of programming that analyses variables and chooses a direction in which to go based on given parameters. The term flow control details the direction the program takes (which way program control “flows”). Hence it is the basic decision-making process in computing; flow control determines how a computer will respond when given certain conditions and parameters.</p>
+
+    <p>When a program is running, the code is being read by the computer line by line (from top to bottom, and for the most part left to right), just like you would read a book.  This is known as the “code flow“, now as the code is being read from top to bottom, it may hit a point where it needs to make a decision, this decision could make the code jump to a completely different part of the program, or it could make it re-run a certain piece again, or just plain skip a bunch of code.  The computer program has a strict set of rules to decide which direction to go. So, this decision that must be made, that will in turn affect the flow of code, is known as a control structure.</p>
+    
+</section>
+
+<section class="main-section" id="Syntax">
+    <header>Syntax</header>
+    
+    <img src="https://i0.wp.com/blog.programminghub.io/wp-content/uploads/2016/06/syntax.png?zoom=1.5&w=1120" alt="Abstracted example of IDE.">
+    
+    <p>In computer science, the syntax of a programming language is the set of rules that define the combinations of symbols that are considered to be correctly structured programs in that language. Documents that are syntactically invalid are said to have a syntax error. The concept of syntax in programming language is similar to the concepts of grammar and spelling in spoken language. When a sentence in English has very poor grammar and spelling, it becomes difficult or even impossible to understand. Similarly, when code has syntax errors, the program will not execute.</p>
+
+    <p>The difference is that when you read a sentence in English with a minor error, you can typically still understand its meaning. Very small syntax errors in code, however, make the program unusable. Coders, therefore, have to pay great attention to detail to make sure their code is not only logical but also free of syntax errors. There are a number of aspects to syntax, including statements, variables and keywords.</p>
+
+    <p>Computer language syntax is generally distinguished into three levels:</p>
+    
+    <ul>
+        <li>Words – the lexical level, determining how characters form tokens;</li>
+        <li>Phrases – the grammar level, narrowly speaking, determining how tokens form phrases;</li>
+        <li>Context – determining what objects or variables names refer to, if types are valid, etc.</li>
+    </ul>
+    
+    <p>An example of this in the case of Java would be round brackets (), curly brackets {}, and variables, among other things.</p>
+    
+</section>
+    
+<section class="main-section" id="References">
+    <header>References</header>
+</section>
+    <ul>
+        <li>All the documentation in this page is taken from <a href="https://blog.programminghub.io/blog/2016/06/14/5-basic-concepts-programming-language/">ProgrammingHub.io</a>.</li>
+    </ul>
+</div>
+</main>
+

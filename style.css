@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Source+Sans+Pro|Staatliches');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#hero-img{
+    margin-left: 25%;
+    width: 75%;
+}
+
+#title{
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    color: #E96666;
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom:2px solid white;
+}
+
+#navbar{
+    background-color: #37354D;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    border-right:solid;
+    border-color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+#navbar li{
+    color: #53C9D7;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin: auto;
+    border-bottom:2px solid white;
+}
+
+#navbar a{
+    text-decoration:none;
+    cursor:pointer;
+}
+
+#content{
+    margin-top: 0%;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    margin-left: 25.5%;
+}
+
+header{
+    font-family: 'Staatliches', cursive;
+    color: #E96666;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+p, li, td{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: dimgrey;
+}
+
+li{
+    margin-left: 60px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+a{
+    color: #E96666;
+}
+
+img{
+    width: 100%;
+}
+
+#code-table{
+    display: flex;
+    justify-content: center;
+    
+}
+
+table, td{
+    border: 3px solid dimgrey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#table-title{
+    color: #53C9D7;
+    text-align: center;
+}
+
+#language{
+    text-align: center;
+    color: #E96666;
+    font-size: 16px;
+}
+
+#example{
+    font-size: 14px;
+}
+
+#code-example{
+    display: flex;
+    justify-content: center;
+}
+
+#code{
+    background-color: #8960CD;
+    padding: 10px;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-size: 14;    
+}
+
+@media(max-width: 950px){
+    #title, #navbar li{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 750px){
+    #title, #navbar li{
+        font-size: 15px;
+    }
+}
